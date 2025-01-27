@@ -19172,9 +19172,4 @@ explore: events {
     sql_on:  ${prioritized_not_prioritized.target_entity_id} = ${events.target_entity_id};;
     relationship: many_to_many
   }
-  # join: product_title_extract {
-  #   type: left_outer
-  #   sql_on: ${events.metadata__product_log_id} =  ${product_title_extract.events_metadata__product_log_id};;
-  #   relationship: many_to_many
-  # }
 }
